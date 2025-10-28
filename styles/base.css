@@ -1,0 +1,147 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Header and Navigation Styles */
+header {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Main Content Layout (Grid) */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.main-content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.card h2 {
+  text-align: center;
+  color: #003366;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+/* Specific About Me Card Layout (Flexbox) */
+.about-me-card .card-content-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.about-me-card img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about-me-card .country-info {
+  margin-top: 1.5rem;
+}
+
+.country-info h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 0.5rem;
+}
+
+.country-info .country-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.country-info figure {
+  margin: 0;
+  text-align: center;
+}
+
+.country-info figcaption {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.country-info img {
+  max-width: 120px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Web Dev Resources List */
+.web-dev-resources-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.web-dev-resources-card a {
+  color: #003366;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.web-dev-resources-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}

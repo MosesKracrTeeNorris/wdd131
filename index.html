@@ -1,11 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD 131</title>
+    <title>WDD 131 | Dynamic Web Fundamentals | Moses Kracar-Tee Norris</title>
+    <meta
+      name="description"
+      content="WDD 131 | Dynamic Web Fundamentals | Moses Kracar-Tee Norris. This is a personal introductory page showcasing web development skills and information about my beloved country mamaLNiberia."
+    />
+    <meta name="author" content="Moses Kracar-Tee Norris" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/getdates.js" defer></script>
   </head>
   <body>
-    <h1>Welcome to WDD 131 - Moses Kracar-Tee Norris</h1>
+    <header>
+      <span id="course-title"
+        >WDD 131: Dynamic Web Fundamentals-Moses Kracar-Tee Norris</span
+      >
+      <nav>
+        <a
+          href="https://www.linkedin.com/in/moses-k-t-norris-a22787139/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+          target="_blank"
+          >Scripture</a
+        >
+        <a href="#">Final Project</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Moses Kracar-Tee Norris</h1>
+      <div class="main-content-grid">
+        <section class="card about-me-card">
+          <h2>About Me</h2>
+          <div class="card-content-top">
+            <p>
+              My name is Moses Kracar-Tee Norris. I am from Liberia, and I am
+              currently studying web development at the Brigham Young University
+              Idaho. I love Information Technology, Science, and Religious. I am
+              a member of the Church Of Jesus Christ of Latter-Day Saints. I
+              have served as a fulltime missionary in the then Nigeria Calabar
+              Mission. The Mission has now been divided into two, namely the
+              Nigeria Calabar Mission, and the Uyo Nigeria Mission. I love to
+              learn new things always, and problem solving is my passion.
+            </p>
+            <img
+              src="images/myself.jpg"
+              alt="Photo of Moses Kracar-Tee Norris"
+            />
+          </div>
+          <div class="country-info">
+            <h3>Monrovia, Liberia</h3>
+            <div class="country-details">
+              <figure>
+                <img src="images/sealoflib1.jpeg" alt="The Seal of Liberia" />
+                <figcaption>Official Seal of Liberia</figcaption>
+              </figure>
+              <p>
+                Liberia is located on the West cost of Africa, bordered by
+                Guinea on the north, Sierra Leone on the west, Ivory Coast on
+                the east, and on the south by the Atlantic Ocean. The country is
+                rich with various natural mineral resources, some of which
+                include; Gold, Diamond, Iron Ore, Forest, Petroleum, ect. Our
+                common slogan is 'The Sweet Land Of Liberty'. Yes indeed! My
+                country Liberia is a home of sweet land of Liberty. As it is
+                recorded on book, the country has about little over 16 ethnic
+                groups. Liberia is a build on Christian Principle, but other
+                religious are free to practice their believe. Liberia was
+                founded in July 26, 1847 by the American Colonization Society
+                (ACS). We are one of the oldest independence nations in Africa.
+                The population of Liberia is little over six (6) million
+                inheritance. We are kind, and peaceful loving people.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="card web-dev-resources-card">
+          <h2>Web Dev Resources</h2>
+          <ul>
+            <li>
+              <a href="https://dev.to/" target="_blank">Dev.to Community</a>
+            </li>
+            <li>
+              <a href="https://www.smashingmagazine.com/" target="_blank"
+                >Smashing Magazine</a
+              >
+            </li>
+            <li>
+              <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/" target="_blank"
+                >W3 Schools</a
+              >
+            </li>
+            <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+            <li>
+              <a href="https://placeholder.com/" target="_blank"
+                >Image Placeholder</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> Moses Kracar-Tee Norris 💎 Liberia
+      </p>
+      <p id="lastModified"></p>
+    </footer>
   </body>
 </html>
