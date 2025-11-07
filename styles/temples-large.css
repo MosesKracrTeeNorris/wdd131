@@ -8,13 +8,14 @@
     }
 
     .navigation {
+        display: flex;
         justify-content: flex-end;
         flex-direction: row;
 
     }
 
     .navigation a {
-        display: inline-flex;
+        display: flex;
         padding: 1rem;
         flex: 1 1 100%;
     }
