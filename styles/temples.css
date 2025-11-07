@@ -100,7 +100,7 @@ header h1 {
 }
 
 .navigation a {
-    display: none;
+    display: flex;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
