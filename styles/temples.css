@@ -110,6 +110,7 @@ header h1 {
 }
 
 .navigation a:hover {
+    display: flex;
     background-color: chocolate;
     color: var(--accent3-color-Platinum);
     text-decoration: none;
