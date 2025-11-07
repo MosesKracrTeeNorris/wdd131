@@ -14,7 +14,7 @@
     }
 
     .navigation a {
-        display: block;
+        display: inline-flex;
         padding: 1rem;
         flex: 1 1 100%;
     }
