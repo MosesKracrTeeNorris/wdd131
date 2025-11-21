@@ -133,20 +133,15 @@ main {
     margin: 5px 20px;
 }
 
-
-
-.temple-card {
-    max-width: 300px;
-    height: 350px;
-    background-color: var(--accent3-color-Platinum);
-}
-
 .temple-card {
     border: 1px solid #778DA9;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px #0d1b2ac2;
     margin-bottom: 30px;
+    max-width: 300px;
+    height: 350px;
+    background-color: var(--accent3-color-Platinum);
 }
 
 .temple-card img {
