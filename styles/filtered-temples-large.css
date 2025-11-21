@@ -5,16 +5,16 @@
         font-size: 16px;
     }
 
-    .navigation {
+    .navigation ul {
         grid-column: 3;
-        display: none;
+        display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
     }
 
     .navigation a {
-        display: none;
+        display: block;
         padding: 1rem;
         flex: 1 1 100%;
     }
