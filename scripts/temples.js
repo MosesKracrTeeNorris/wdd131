@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-
 function displayCurrentDateTime() {
     const now = new Date(); // Create a new Date object
     const dateTimeString = now.toLocaleString(); // Get the local date and time string
