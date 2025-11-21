@@ -7,14 +7,14 @@
 
     .navigation {
         grid-column: 3;
-        display: block;
+        display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
     }
 
     .navigation a {
-        display: flex;
+        display: block;
         padding: 1rem;
         flex: 1 1 100%;
     }
