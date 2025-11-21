@@ -5,7 +5,7 @@
         font-size: 16px;
     }
 
-    .navigation ul {
+    .navigation {
         grid-column: 3;
         display: flex;
         align-items: center;
@@ -14,13 +14,13 @@
     }
 
     .navigation a {
-        display: block;
+        display: flex;
         padding: 1rem;
         flex: 1 1 100%;
     }
     /* Hide hamburger button */
     #menu {
-        display: none;
+        display: flex;
         
     }
 
