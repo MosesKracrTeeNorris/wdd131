@@ -19,7 +19,7 @@
     --font-weight-thin: 100;
 
     /* Text colors */
-    --headline-color-on-white: var(--primary-color-rich-black);
+    /* --headline-color-on-white: var(--primary-color-rich-black); */
     --headline-color-on-color: var(--accent3-color-platinum);
     --paragraph-color-on-white: var(--primary-color-rich-black);
     --paragraph-color-on-color: var(--accent3-color-platinum);
