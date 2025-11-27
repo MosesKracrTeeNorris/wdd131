@@ -21,15 +21,15 @@
     /* Text colors */
     /* --headline-color-on-white: var(--primary-color-rich-black); */
     --headline-color-on-color: var(--accent3-color-platinum);
-    --paragraph-color-on-white: var(--primary-color-rich-black);
-    --paragraph-color-on-color: var(--accent3-color-platinum);
+    /* --paragraph-color-on-white: var(--primary-color-rich-black); */
+    /* --paragraph-color-on-color: var(--accent3-color-platinum); */
 
     /* Background colors */
-    --paragraph-background-color: var(--secondary-color-oxford-blue);
+    /* --paragraph-background-color: var(--secondary-color-oxford-blue);
     --nav-link-color: var(--accent3-color-platinum);
     --nav-background-color: var(--secondary-color-oxford-blue);
     --nav-hover-link-color: var(--accent2-color-silverlake-blue);
-    --nav-hover-background-color: var(--primary-color-rich-black);
+    --nav-hover-background-color: var(--primary-color-rich-black); */
 }
 
 /* General reset */
