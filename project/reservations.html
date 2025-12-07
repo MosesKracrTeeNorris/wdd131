@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Passcode Netmask Restaurant | Reservations</title>
+    <meta name="description" content="Passcode Netmask Restaurant in Liberia: Enjoy the finest traditional Liberian and Continental dishes. Scan our QR code for the digital menu."
+    />
+    <meta name="keywords" content="Passcode Netmask Restaurant Reservations">
+    <meta name="author" content="Moses Kracar-Tee Norris">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="images/peniel-logo.png"
+          alt="Passcode Netmask Logo"
+          class="logo-icon-image"
+        />
+        <span class="logo-text">Passcode Netmask Liberia</span>
+      </div>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="reservations.html" class="active">Reserve Table</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-controls">
+        <button
+          id="mobile-nav-toggle"
+          class="mobile-nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle dark mode"
+        ></button>
+      </div>
+    </header>
+
+    <div class="mobile-nav-menu" id="mobile-nav-menu">
+      <i class="fas fa-times close-btn" id="mobile-nav-close"></i>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="reservations.html" class="active">Reserve Table</a></li>
+      </ul>
+    </div>
+
+    <main class="container page-content">
+      <section class="reservation-section">
+        <h1 class="page-title">
+          Book Your Table at Passcode Netmask Restaurant
+        </h1>
+        <p class="section-description">
+          We look forward to hosting you. Please fill out the form below to
+          secure your reservations. For parties larger than 5, please select '5+'
+          and we will call you to confirm arrangements.
+        </p>
+
+        <form class="reservation-form" id="reservation-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Enter your full name"
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email address"
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="e.g., +231888998877"
+                autocomplete="tel"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="date">Date *</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <div class="form-group">
+              <label for="time">Time *</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Number of Guests *</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select number of guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6+">6+ People</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="notes">Special Requests (Optional)</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="3"
+              placeholder="Dietary restrictions, preferred seating, high chair needed, etc."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary full-width">
+            Confirm Reservation
+          </button>
+          <p class="form-notice">
+            We will send a confirmation email or call you shortly. Required
+            fields are marked with *.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+        <div class="footer-content container">
+          <p>&copy; 2025 Passcode Netmask Restaurant. All rights reserved.</p>
+          <img
+            src="images/peniel-logo.png"
+            alt="Vendor Logo"
+            width="100"
+            height="55"
+          />
+          <div class="footer-social-links">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              aria-label="X (Twitter)"
+            >
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="reservations.html">Reservations</a>
+          </div>
+          <img
+            src="images/peniel-logo.png"
+            alt="Vendor Logo"
+            width="100"
+            height="55"
+          />
+        </div>
+      <div class="update"><p>&copy;<span id="currentyear"></span>🌺Moses Kracar-Tee Norris 🌺 Liberia</p>
+          <p id="lastModified"></p></div>
+      </footer>
+
+    <!-- <script src="scripts/script.js"></script> -->
+  </body>
+</html>

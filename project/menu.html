@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Passcode Netmask Restaurant Menu</title>
+    <meta name="description" content="Passcode Netmask Restaurant in Liberia: Enjoy the finest traditional Liberian and Continental dishes. Scan our QR code for the digital menu."
+    />
+    <meta name="keywords" content="Passcode Netmask Restaurant Menu">
+    <meta name="author" content="Moses Kracar-Tee Norris">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="images/peniel-logo.png"
+          alt="Passcode Netmask Logo"
+          class="logo-icon-image"
+        />
+        <span class="logo-text">Passcode Netmask Liberia</span>
+      </div>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="reservations.html">Reserve Table</a></li>
+        </ul>
+      </nav>
+      <div class="header-controls">
+        <button
+          id="mobile-nav-toggle"
+          class="mobile-nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle dark mode"
+        ></button>
+      </div>
+    </header>
+
+    <div class="mobile-nav-menu" id="mobile-nav-menu">
+      <i class="fas fa-times close-btn" id="mobile-nav-close"></i>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="reservations.html">Reserve Table</a></li>
+      </ul>
+    </div>
+
+    <main class="container">
+      <section class="menu-hero-banner">
+        <h1>The Full Digital Menu</h1>
+        <p>
+          Experience the best of Liberian, Continental, and Fast-Food cuisine,
+          optimized for quick viewing on your device.
+        </p>
+      </section>
+
+      <div class="menu-tools-container">
+        <section class="random-dish-section">
+          <h2>Confused? Try Our Chef's Pick!</h2>
+          <button id="random-dish-btn" class="btn-primary large">
+            <i class="fas fa-magic"></i> Surprise Me!
+          </button>
+          <div id="random-dish-result" class="dish-highlight-card">
+            <p>Click the button to see a delicious suggestion.</p>
+          </div>
+        </section>
+
+        <section class="qr-scan-section">
+          <h2>Scan for Instant App Access</h2>
+          <p>
+            Use your phone's camera for immediate access to this menu and more
+            features.
+          </p>
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://moseskracrteenorris.github.io/wdd131/menu.html"
+            alt="QR Code for Farmington Hotel Digital App"
+            class="qr-code"
+            loading="lazy"
+          />
+        </section>
+      </div>
+
+      <section class="menu-section">
+        <div class="menu-controls">
+          <div class="control-group">
+            <label for="filter-category">Filter by:</label>
+            <select id="filter-category">
+              <option value="all">All Categories</option>
+              <option value="african">Liberian Cuisine</option>
+              <option value="continental">Continental</option>
+              <option value="fastfood">Fast Food</option>
+              <option value="dessert">Desserts</option>
+            </select>
+          </div>
+          <div class="control-group">
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by">
+              <option value="default">Default</option>
+              <option value="price-asc">Price (Low to High)</option>
+              <option value="price-desc">Price (High to Low)</option>
+              <option value="name-asc">Name (A-Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-grid" id="menu-list">
+          <div
+            class="menu-item"
+            data-category="african"
+            data-price="3500"
+            data-name="Jollof Rice with Chicken"
+          >
+            <img src="images/menu1.jpg" alt="Jollof Rice with Chicken" />
+            <h3>Jollof Rice with Chicken</h3>
+            <p>Smoky Liberian jollof rice served with chicken.</p>
+            <span class="price">$20 USD or $3,500 LRD</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="african"
+            data-price="4800"
+            data-name="Egusi Soup with Pounded Yam"
+          >
+            <img src="images/pounded-yam.jpg" alt="Egusi Soup with Pounded Yam" />
+            <h3>Egusi Soup with Pounded Yam</h3>
+            <p>
+              Rich melon seed soup cooked with assorted meats and fresh
+              vegetables.
+            </p>
+            <span class="price">$26 USD or $4,800 LRD</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="continental"
+            data-price="4000"
+            data-name="Grilled Fish"
+          >
+            <img src="images/grilledfish.jpg" alt="Grilled Fish" />
+            <h3>Grilled Croaker Fish</h3>
+            <p>Perfectly seasoned whole fish served with a choice of sides.</p>
+            <span class="price">$25 USD or $4,000 LRD</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="fastfood"
+            data-price="2500"
+            data-name="Pizza Slice"
+          >
+            <img src="images/pizza.jpg" alt="Pizza on Plate" />
+            <h3>Cheesy Pizza</h3>
+            <p>
+              Large, fresh pizza slice topped with vegetables and pepperoni.
+            </p>
+            <span class="price">$15USD or $2,500 LRD</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="fastfood"
+            data-price="5000"
+            data-name="Burger with Fries"
+          >
+            <img src="images/menu2.jpg" alt="Burger with Fries" />
+            <h3>Signature Beef Burger</h3>
+            <p>Classic juicy beef burger and golden crispy fries combo.</p>
+            <span class="price">$30 USD or $5,000 LRD</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="continental"
+            data-price="13000"
+            data-name="Spaghetti Bolognese"
+          >
+            <img src="images/menu3.jpg" alt="Spaghetti with Tomato Sauce" />
+            <h3>Classic Spaghetti Bolognese</h3>
+            <p>Spaghetti cooked in rich tomato sauce and herbs.</p>
+            <span class="price">$37 USD or $8,000 LRD</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="continental"
+            data-price="1800"
+            data-name="Salad Bowl"
+          >
+            <img src="images/menu4.jpg" alt="Salad Bowl" />
+            <h3>Fresh Salad Bowl</h3>
+            <p>Fresh vegetable salad with creamy dressing.</p>
+            <span class="price">$9 USD or $1,800 LRD</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="dessert"
+            data-price="5000"
+            data-name="Dessert of the Day"
+          >
+            <img src="images/menu5.jpg" alt="Dessert or Cake Slice" />
+            <h3>Chef's Dessert of the Day</h3>
+            <p>
+              End your meal with our chef's special, always changing sweet
+              treat.
+            </p>
+            <span class="price">$8 USD or $1500 LRD</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="african"
+            data-price="2000"
+            data-name="beef and porish"
+          >
+            <img src="images/menu2.jpg" alt="Beef and porish" />
+            <h3>Beef and Porish</h3>
+            <p>
+              Traditional flour served with beef and porish of your choice.
+            </p>
+            <span class="price">$11 USD $2,000 LRD</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="continental"
+            data-price="3000"
+            data-name="Creamy Chicken Pasta"
+          >
+            <img src="images/menu6.jpg" alt="Creamy Chicken Pasta" />
+            <h3>Creamy Chicken Pasta</h3>
+            <p>
+              Fettuccine pasta tossed in a rich, creamy sauce with grilled
+              chicken breast.
+            </p>
+            <span class="price">$18 USD or $3,000 LRD</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="african"
+            data-price="3000"
+            data-name="Banga Soup and Starch"
+          >
+            <img src="images/menu7.jpg" alt="Banga Soup with Starch" />
+            <h3>Banga Soup and Starch</h3>
+            <p>
+              A classic palm nut soup served with Liberian starch (usi) and
+              assorted seafood.
+            </p>
+            <span class="price">$18 USD or $3,000 LRD</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="african"
+            data-price="4000"
+            data-name="Liberian Fried Rice and Turkey"
+          >
+            <img
+              src="images/menu8.jpg"
+              alt="Liberian Fried Rice with Turkey"
+            />
+            <h3>Liberian Fried Rice & Turkey</h3>
+            <p>
+              Flavorful Liberian-style fried rice served with tender, seasoned
+              turkey pieces.
+            </p>
+            <span class="price">$22 USD or $4,000 LRD</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <div class="footer-content container">
+          <p>&copy; 2025 Passcode Netmask Restaurant. All rights reserved.</p>
+          <img
+            src="images/peniel-logo.png"
+            alt="Vendor Logo"
+            width="100"
+            height="55"
+          />
+          <div class="footer-social-links">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              aria-label="X (Twitter)"
+            >
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="reservations.html">Reservations</a>
+          </div>
+          <img
+            src="images/peniel-logo.png"
+            alt="Vendor Logo"
+            width="100"
+            height="55"
+          />
+        </div>
+      <div class="update"><p>&copy;<span id="currentyear"></span>🌺Moses Kracar-Tee Norris 🌺 Liberia</p>
+          <p id="lastModified"></p></div>
+      </footer>
+
+    <!-- <script src="scripts/script.js"></script> -->
+  </body>
+</html>
